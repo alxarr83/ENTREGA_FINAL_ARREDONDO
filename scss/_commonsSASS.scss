@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Source+Sans+Pro:wght@300&display=swap');
+
+$firstFont: 'Source Sans Pro', sans-serif;
+$secondFont: 'Roboto', sans-serif;
+
+//Typography
+$textBiggest:20rem;
+$textBig:4rem;
+$textMed:3rem;
+$textSm:2.0rem;
+
+$textBold: 800;
+$textReg:400;
+$textThin:250;
+
+$textCenter:center;
+$textJustify:justify;
+$textRight:right;
+$textLeft:Left;
+$firstColor:  rgba(15, 26, 128, 0.7);
+$secondColor:rgb(34, 149, 172);
+$thirdColor:rgb(179, 202, 245);
+$WA_color:#27af2e;
+$White_color:white;
+$Black_color:black;
+
+.bg-blue{
+    background-color:  $firstColor;
+ }
+
+.bg-lblue{
+    background-color: $secondColor;
+}
+
+.bgLight{
+	background-color:$thirdColor ;
+}
+
+*{
+	font-family: $firstFont;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html{
+	font-size: 62.5%;
+}
+

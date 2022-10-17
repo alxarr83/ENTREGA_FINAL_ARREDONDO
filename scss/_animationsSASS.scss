@@ -1,0 +1,182 @@
+@import "_commonsSASS";
+
+.linear-gradient{
+	background: linear-gradient(to right, rgb(192, 255, 206), rgb(4, 126, 4));
+}
+
+.transform:hover{
+	transform: translate(-10px,10px);
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+.rotate:hover{
+	transform: rotateZ(-360deg);
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+.scale:hover{
+	transform: scaleX(0.8);
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+.skew:hover{
+	transform: skewX(-10deg);
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+
+@keyframes headerAnimation{
+	0%{background-image: url(../img/FIGO_PROJECT2.jpg)}
+	25%{background-image: url(../img/FIGO_PROJECT1.webp)}
+	50%{background-image: url(../img/FIGO_PROJECT11.jpg)}
+	75%{background-image: url(../img/FIGO_TRUCK.jpeg)}
+	100%{background-image: url(../img/FIGO_TRUCK2.jpg)}
+}
+
+header{
+	height: 40vh;
+    width: 100%;
+	background-size: cover;
+	animation-name: headerAnimation;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+button{
+	width: 100px;
+	height: 25px;
+	background: linear-gradient(to border-radius, rgb(114, 150, 204), rgb(6, 4, 121));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	margin-left: 50px;
+	border:none;
+	border-radius: 4px;
+	transition: all 2s;
+}
+
+button:hover{
+	background: linear-gradient(to top, rgb(82, 150, 206), rgb(7, 28, 121));
+	cursor: pointer;
+	
+}
+
+@-webkit-keyframes bounceInUp {
+	0% {
+	  opacity: 0;
+	  -webkit-transform: translateY(2000px);
+	  transform: translateY(2000px);
+	}
+  
+	60% {
+	  opacity: 1;
+	  -webkit-transform: translateY(-30px);
+	  transform: translateY(-30px);
+	}
+  
+	80% {
+	  -webkit-transform: translateY(10px);
+	  transform: translateY(10px);
+	}
+  
+	100% {
+	  -webkit-transform: translateY(0);
+	  transform: translateY(0);
+	}
+  }
+  
+  @keyframes bounceInUp {
+	0% {
+	  opacity: 0;
+	  -webkit-transform: translateY(2000px);
+	  -ms-transform: translateY(2000px);
+	  transform: translateY(2000px);
+	}
+  
+	60% {
+	  opacity: 1;
+	  -webkit-transform: translateY(-30px);
+	  -ms-transform: translateY(-30px);
+	  transform: translateY(-30px);
+	}
+  
+	80% {
+	  -webkit-transform: translateY(10px);
+	  -ms-transform: translateY(10px);
+	  transform: translateY(10px);
+	}
+  
+	100% {
+	  -webkit-transform: translateY(0);
+	  -ms-transform: translateY(0);
+	  transform: translateY(0);
+	}
+  }
+  
+  .bounceInUp {
+	-webkit-animation-name: bounceInUp;
+	animation-name: bounceInUp;
+  }
+
+  
+@-webkit-keyframes bounceInDown {
+	0% {
+	  opacity: 0;
+	  -webkit-transform: translateY(-2000px);
+	  transform: translateY(-2000px);
+	}
+  
+	60% {
+	  opacity: 1;
+	  -webkit-transform: translateY(30px);
+	  transform: translateY(30px);
+	}
+  
+	80% {
+	  -webkit-transform: translateY(-10px);
+	  transform: translateY(-10px);
+	}
+  
+	100% {
+	  -webkit-transform: translateY(0);
+	  transform: translateY(0);
+	}
+  }
+  
+  @keyframes bounceInDown {
+	0% {
+	  opacity: 0;
+	  -webkit-transform: translateY(-2000px);
+	  -ms-transform: translateY(-2000px);
+	  transform: translateY(-2000px);
+	}
+  
+	60% {
+	  opacity: 1;
+	  -webkit-transform: translateY(30px);
+	  -ms-transform: translateY(30px);
+	  transform: translateY(30px);
+	}
+  
+	80% {
+	  -webkit-transform: translateY(-10px);
+	  -ms-transform: translateY(-10px);
+	  transform: translateY(-10px);
+	}
+  
+	100% {
+	  -webkit-transform: translateY(0);
+	  -ms-transform: translateY(0);
+	  transform: translateY(0);
+	}
+  }
+  
+  .bounceInDown {
+	-webkit-animation-name: bounceInDown;
+	animation-name: bounceInDown;
+  }

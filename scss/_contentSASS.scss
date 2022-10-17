@@ -1,0 +1,136 @@
+@import "_commonsSASS";
+
+.add__WA{
+	text-align: center;
+    width: 100%;
+	background-color: #27af2e;
+    color: $White_color;
+    font-size: 2.25rem;
+	padding: 4px 0;
+    font-weight: 800   
+}
+
+.buttonsMenu {
+    
+    /*position background-color: rgba(20, 111, 196, 0.5);*/
+    position: sticky;
+    top: 0;
+    /*padding*/
+    padding: 10px 30px;
+    /****display flex *****/
+    /* --- NAV EN COLUMNA EN MOBILE --- */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    /*hover*/
+    .buttonsMenu ul li a:hover{
+        color: black;
+      font-weight: 600;
+    }
+
+.encabezado__img--fluid{
+	width: 100%;
+} 
+
+
+
+body {
+    background-image: url(../img/circuit.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.textMenu{
+    font-weight: $textBold;
+	font-size: $textSm;
+	color:$White_color;
+}
+
+.textP1{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $firstColor;
+    font-size: $textBig;
+    text-align: $textCenter;
+    size: $textBold;
+}
+
+.textList{
+    color:$thirdColor;
+	line-height: $textBig;
+	font-size: $textMed;
+}
+
+.text_Justify{
+    text-align: $textJustify;
+}
+
+.textBold{
+	font-weight: 600;
+}
+
+.textBig1{
+	font-weight: $textBiggest;
+}
+
+.textCenter{
+	text-align: center;
+}
+
+.textRight{
+	text-align: right;
+}
+
+.textLeft{
+	text-align: left;
+}
+
+h1{
+
+    @extend .textP1;
+    color:$Black_color;
+   background-color: $secondColor;
+    
+}
+
+h2{
+    @extend .textP1;
+    color: $thirdColor;
+    font-size: $textBig;
+}
+
+h3{
+    @extend .textP1;
+    color: $thirdColor;
+    font-size: $textMed;
+}
+
+p{
+	@extend .textList;
+    
+}
+
+.encabezado__img--fluid{
+	/*size*/
+	width: 100%;
+} 
+
+.Nav2{
+	background-color: rgba(164, 224, 211, 0.8);
+	color:$Black_color;
+	padding: 10px 30px;
+	font-size: $textMed;
+	line-height: 1.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	.Nav2 form{
+		margin-bottom: 20px;
+	}
+
+	.Nav2 img{
+		margin-bottom: 30px;
+	}

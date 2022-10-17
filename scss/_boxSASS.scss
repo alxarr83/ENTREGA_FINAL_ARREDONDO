@@ -1,0 +1,55 @@
+@import "_commonsSASS";
+
+
+@mixin textP ($size,$interline,$color){
+	font-size: $size;
+	line-height: $interline;
+	color:$color;
+	padding: 10px;
+	font-family: $firstFont;
+	font-weight: $textBold;
+}
+
+
+$textP: (
+	fontSize1: 2.5rem,
+	lineHeight1: 2rem,
+	color2:$secondColor,
+	padding1: 10px,
+	fontFamily1: $firstFont,
+	fontWeight1: $textBold,
+	);
+
+@mixin boxes ($ancho,$alto,$margen,$coloc) {
+	width: $ancho;
+    height: $alto;
+    margin: $margen;
+    padding: $coloc;
+}
+
+
+
+.box{
+
+	size:map-get($textP, fontSize1);
+	line-height: map-get($textP,lineHeight1);
+	color: map-get($textP, color2 );
+	padding: map-get($textP, padding1 );
+	font-family: map-get($textP , fontFamily1 );
+	font-weight: map-get($textP, fontWeight1 );
+	@include boxes(90%,auto ,50px auto ,40px 20px );
+    border: dotted $firstColor 2px;
+    background-color: $firstColor ;
+    overflow-y: auto;
+}
+
+
+.box_Img {
+	//@include boxes(985px,415px,20px 30px , );
+	@include boxes(50%,100% ,auto auto ,20px 20px);
+	border: solid #7178b7b3 2px;
+	box-sizing: border-box;
+	display: block; 
+
+}
+
